@@ -132,3 +132,5 @@ SetupPromptSD () {
 }
 
 PROMPT_COMMAND=SetupPromptSD
+
+export PATH="$HOME/bin:$PATH"
