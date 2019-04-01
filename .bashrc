@@ -128,7 +128,7 @@ SetupPromptSD () {
         let fillsize=${fillsize}-1
     done
 
-    PS1="[$lastExitCode]$fill\\n$OLD_PS1"
+    PS1="[$(printf %\ 3d $lastExitCode)]$fill\\n$OLD_PS1"
 }
 
 PROMPT_COMMAND=SetupPromptSD
